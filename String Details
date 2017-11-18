@@ -1,0 +1,28 @@
+x = input("Enter a String")
+print("\nYou Entered : "+x)
+#initialisation
+v = 0
+c = 0
+sp = 0
+s = 0
+n = 0
+
+print("Length : "+str(len(x)))
+
+for i in range(len(x)):
+    if x[i]=='a' or x[i]=='e' or x[i]=='i' or x[i]=='o' or x[i]=='u' or x[i]=='A' or x[i]=='E' or x[i]=='I' or x[i]=='O' or x[i]=='U':
+        v=v+1
+    elif x[i]>='A' and x[i]<='Z' or x[i]>='a' and x[i]<='z':
+        c=c+1
+    elif x[i]>='0' and x[i]<='9':
+        n=n+1
+    elif x[i]==' ':
+        sp=sp+1
+    else:
+        s=s+1       
+                    
+print("Number of Vowels : "+ str(v))
+print("Number of Consonants : "+ str(c))
+print("Numbers : "+ str(n))
+print("Number of Spaces : "+ str(sp))
+print("Number of Special Charecters : "+ str(s))
